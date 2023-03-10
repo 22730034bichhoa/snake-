@@ -1,21 +1,24 @@
-# snake
-#include <studio.h>
-#include <window.h>
-#include <conio.h>
-#include <string.h>
-#include <time.h>
-struct ToaDo
+void ve(){
+   void ve(Point Qua)
+       {
+          for i = 0;i < DoDai; i++)
+             { 
+               gotoxy(A[1].x, A[1].y);
+               count << "x";
+             }
+          gotoxy( Qua.x , Qua.y);count<<"*";
+       }
+void DiChuyen(int Huong)
 {
-int x,y;
-};
-ToaDo Head,tail,Body;
-ToaDo TD[401];
-int demTD=0,demV=90;
-int DoDai=2,CheckAnV=0,CheckV=0,ktDoAn=0;
-int DiemCT=0,Diem0LD=0,DiemV=0;
-ToaDo DoAn,DoAnV=0;
-int doKho=100;
-int wherey ()
-{
-CONSOLE_SCREEN_BUFFER_INFO coninfo;
-GetConsoleScreenBufferInfor (GetStdHandle(STD_OUTPUT_HANDLE), &coninfo);
+  void DiChuyen(int Huong,Point& Qua)
+    {
+      for (int i = DoDai-1; i>0;i--)
+           A[i] = A[i-1];
+      if (Huong==0) A[0].x = A[0].x + 1;
+      if (Huong==1) A[0].y = A[0].y + 1;
+      if (Huong==2) A[0].x = A[0].x - 1;
+      if (Huong==3) A[0].y = A[0].y - 1;
+    }
+  
+  
+          
